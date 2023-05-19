@@ -40,8 +40,8 @@ def main():
     elif inputChoice[0] == "F":
         #faila nosaukumam tiek pievienots relatīvais path, citādāk neizpildās testi
         file = open("tests/" + input(), mode="r", encoding="utf-8")
-        n = int(file.readlines())
-        data = list(map(int, file.readlines().split()))
+        n = int(next(file))
+        data = list(map(int, file.readline().split()))
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
