@@ -39,7 +39,7 @@ def main():
 
     elif inputChoice[0] == "F":
         #faila nosaukumam tiek pievienots relatīvais path, citādāk neizpildās testi
-        file = open("test/" + input(), mode="r", encoding="utf-8")
+        file = open("tests/" + input(), mode="r", encoding="utf-8")
         n = int(file.readlines())
         data = list(map(int, file.readlines().split()))
 
